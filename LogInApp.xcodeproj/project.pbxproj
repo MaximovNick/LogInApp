@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82A285A31020058B6A5 /* AppDelegate.swift */; };
 		ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */; };
-		ADA7F82F285A31020058B6A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82E285A31020058B6A5 /* ViewController.swift */; };
+		ADA7F82F285A31020058B6A5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82E285A31020058B6A5 /* LogInViewController.swift */; };
 		ADA7F832285A31020058B6A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7F830285A31020058B6A5 /* Main.storyboard */; };
 		ADA7F834285A31020058B6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA7F833285A31020058B6A5 /* Assets.xcassets */; };
 		ADA7F837285A31020058B6A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7F835285A31020058B6A5 /* LaunchScreen.storyboard */; };
+		ADA7F83F285A39300058B6A5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADA7F827285A31020058B6A5 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA7F82A285A31020058B6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADA7F82E285A31020058B6A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADA7F82E285A31020058B6A5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		ADA7F831285A31020058B6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADA7F833285A31020058B6A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA7F836285A31020058B6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADA7F838285A31020058B6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				ADA7F82A285A31020058B6A5 /* AppDelegate.swift */,
 				ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */,
-				ADA7F82E285A31020058B6A5 /* ViewController.swift */,
+				ADA7F82E285A31020058B6A5 /* LogInViewController.swift */,
+				ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */,
 				ADA7F830285A31020058B6A5 /* Main.storyboard */,
 				ADA7F833285A31020058B6A5 /* Assets.xcassets */,
 				ADA7F835285A31020058B6A5 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA7F82F285A31020058B6A5 /* ViewController.swift in Sources */,
+				ADA7F82F285A31020058B6A5 /* LogInViewController.swift in Sources */,
+				ADA7F83F285A39300058B6A5 /* WelcomeViewController.swift in Sources */,
 				ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */,
 				ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */,
 			);
