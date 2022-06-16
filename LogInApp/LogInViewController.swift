@@ -9,35 +9,37 @@ import UIKit
 
 class LogInViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // Login details
-    var userName = "User"
-    var password = "Password"
+    // MARK: - Private properties
+    private var userName = "User"
+    private var password = "Password"
     
-    // Transferring data to another screen
+    // MARK: - Navigations
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = userName
     }
     
+    // MARK: - IB Actions
     @IBAction func logInButtonPressed() {
         guard userTextField.text == userName, passwordTextField.text == password
         else {
             showAlert(
-                title: "Ops",
-                message: "Invalid username or password"
+                title: "Invalid username or password",
+                message: "Please enter correct login and password"
             )
             return
         }
         performSegue(withIdentifier: "welcomeVC", sender: nil)
     }
     
-    // Name and password reminder
     @IBAction func rememberUsernameOrPassword(_ sender: UIButton) {
-        sender.tag == 0 ? showAlert(title: "Hello!", message: "Your name is User") :
-        showAlert(title: "Hello!", message: "Your password is Password")
+        sender.tag == 0
+        ? showAlert(title: "Hello!", message: "Your name is User")
+        : showAlert(title: "Hello!", message: "Your password is Password")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -47,8 +49,7 @@ class LogInViewController: UIViewController {
     }
 }
 
-
-// MARK: Extension - Alert Controller
+// MARK: - Alert Controller
 extension LogInViewController {
     
     private func showAlert(title: String, message: String) {
@@ -60,3 +61,5 @@ extension LogInViewController {
         present(alert, animated: true)
     }
 }
+
+
