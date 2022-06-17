@@ -14,18 +14,23 @@ class LogInViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private properties
-    private var userName = "User"
-    private var password = "Password"
+    let user = User.getUser()
     
     // MARK: - Navigations
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = userName
+        
+        guard let tabBarVC = segue.destination as? TabBarController else { return }
+        guard let welcomeVC = tabBarVC.viewControllers?.first as? WelcomeViewController else { return }
+        guard let navigationVC = tabBarVC.viewControllers?.last as? UINavigationController else { return }
+        guard let userInfoVC = navigationVC.topViewController as? UserInfoViewController else { return }
+        
+        welcomeVC.user = user
+        userInfoVC.user = user
     }
     
     // MARK: - IB Actions
     @IBAction func logInButtonPressed() {
-        guard userTextField.text == userName, passwordTextField.text == password
+        guard userTextField.text == user.user, passwordTextField.text == user.password
         else {
             showAlert(
                 title: "Invalid username or password",
@@ -33,7 +38,7 @@ class LogInViewController: UIViewController {
             )
             return
         }
-        performSegue(withIdentifier: "welcomeVC", sender: nil)
+        performSegue(withIdentifier: "tabBarVC", sender: nil)
     }
     
     @IBAction func rememberUsernameOrPassword(_ sender: UIButton) {
