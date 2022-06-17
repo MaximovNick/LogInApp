@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD08109C285CA7D600789B4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08109B285CA7D600789B4A /* User.swift */; };
+		AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E3285CB74000DCE68D /* TabBarController.swift */; };
+		AD39F7E6285CB85200DCE68D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */; };
 		ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82A285A31020058B6A5 /* AppDelegate.swift */; };
 		ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */; };
 		ADA7F82F285A31020058B6A5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82E285A31020058B6A5 /* LogInViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD08109B285CA7D600789B4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD39F7E3285CB74000DCE68D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		ADA7F827285A31020058B6A5 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA7F82A285A31020058B6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD39F7E7285CC1FD00DCE68D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7F82E285A31020058B6A5 /* LogInViewController.swift */,
+				AD39F7E3285CB74000DCE68D /* TabBarController.swift */,
+				ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */,
+				AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD39F7E8285CC21B00DCE68D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD08109B285CA7D600789B4A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD39F7E9285CC23000DCE68D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7F830285A31020058B6A5 /* Main.storyboard */,
+				ADA7F835285A31020058B6A5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		ADA7F81E285A31020058B6A5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +92,12 @@
 		ADA7F829285A31020058B6A5 /* LogInApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD39F7E8285CC21B00DCE68D /* Model */,
+				AD39F7E7285CC1FD00DCE68D /* Controllers */,
+				AD39F7E9285CC23000DCE68D /* Storyboards */,
 				ADA7F82A285A31020058B6A5 /* AppDelegate.swift */,
 				ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */,
-				ADA7F82E285A31020058B6A5 /* LogInViewController.swift */,
-				ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */,
-				ADA7F830285A31020058B6A5 /* Main.storyboard */,
 				ADA7F833285A31020058B6A5 /* Assets.xcassets */,
-				ADA7F835285A31020058B6A5 /* LaunchScreen.storyboard */,
 				ADA7F838285A31020058B6A5 /* Info.plist */,
 			);
 			path = LogInApp;
@@ -142,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA7F82F285A31020058B6A5 /* LogInViewController.swift in Sources */,
+				AD39F7E6285CB85200DCE68D /* UserInfoViewController.swift in Sources */,
 				ADA7F83F285A39300058B6A5 /* WelcomeViewController.swift in Sources */,
 				ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */,
+				AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */,
+				AD08109C285CA7D600789B4A /* User.swift in Sources */,
 				ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
