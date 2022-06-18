@@ -22,14 +22,12 @@ struct Person {
     
     let name: String
     let surName: String
-    var image: String {
-        "personImage"
-    }
+    var image: String
     var fullName: String {
         "\(name) \(surName)"
     }
     
     static func getPerson() -> Person {
-        Person(name: "John", surName: "Smith")
+        Person(name: "John", surName: "Smith", image: "SwiftImage")
     }
 }

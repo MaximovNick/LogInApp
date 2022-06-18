@@ -18,4 +18,9 @@ class UserInfoViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let imageVC = segue.destination as? ImageViewController else { return }
+        imageVC.user = user
+    }
+    
 }

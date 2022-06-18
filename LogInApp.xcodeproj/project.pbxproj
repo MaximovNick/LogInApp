@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD08109C285CA7D600789B4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08109B285CA7D600789B4A /* User.swift */; };
-		AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E3285CB74000DCE68D /* TabBarController.swift */; };
 		AD39F7E6285CB85200DCE68D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */; };
 		AD8D1B20285E4E4000103894 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D1B1F285E4E4000103894 /* ImageViewController.swift */; };
 		ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82A285A31020058B6A5 /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		AD08109B285CA7D600789B4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		AD39F7E3285CB74000DCE68D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		AD8D1B1F285E4E4000103894 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		ADA7F827285A31020058B6A5 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,24 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD39F7E7285CC1FD00DCE68D /* Controllers */ = {
+		AD39F7E7285CC1FD00DCE68D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				ADA7F82E285A31020058B6A5 /* LogInViewController.swift */,
-				AD39F7E3285CB74000DCE68D /* TabBarController.swift */,
 				ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */,
 				AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */,
 				AD8D1B1F285E4E4000103894 /* ImageViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AD39F7E8285CC21B00DCE68D /* Model */ = {
+		AD39F7E8285CC21B00DCE68D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AD08109B285CA7D600789B4A /* User.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AD39F7E9285CC23000DCE68D /* Storyboards */ = {
@@ -74,6 +71,24 @@
 				ADA7F835285A31020058B6A5 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AD8D1B21285E574100103894 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7F833285A31020058B6A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD8D1B22285E576C00103894 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7F82A285A31020058B6A5 /* AppDelegate.swift */,
+				ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */,
+				ADA7F838285A31020058B6A5 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		ADA7F81E285A31020058B6A5 = {
@@ -95,13 +110,11 @@
 		ADA7F829285A31020058B6A5 /* LogInApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD39F7E8285CC21B00DCE68D /* Model */,
-				AD39F7E7285CC1FD00DCE68D /* Controllers */,
+				AD39F7E8285CC21B00DCE68D /* Models */,
+				AD39F7E7285CC1FD00DCE68D /* ViewControllers */,
 				AD39F7E9285CC23000DCE68D /* Storyboards */,
-				ADA7F82A285A31020058B6A5 /* AppDelegate.swift */,
-				ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */,
-				ADA7F833285A31020058B6A5 /* Assets.xcassets */,
-				ADA7F838285A31020058B6A5 /* Info.plist */,
+				AD8D1B22285E576C00103894 /* SupportingFiles */,
+				AD8D1B21285E574100103894 /* Resources */,
 			);
 			path = LogInApp;
 			sourceTree = "<group>";
@@ -181,7 +194,6 @@
 				AD39F7E6285CB85200DCE68D /* UserInfoViewController.swift in Sources */,
 				ADA7F83F285A39300058B6A5 /* WelcomeViewController.swift in Sources */,
 				ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */,
-				AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */,
 				AD08109C285CA7D600789B4A /* User.swift in Sources */,
 				AD8D1B20285E4E4000103894 /* ImageViewController.swift in Sources */,
 				ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */,
@@ -332,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInApp/Info.plist;
+				INFOPLIST_FILE = LogInApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInApp/Info.plist;
+				INFOPLIST_FILE = LogInApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
