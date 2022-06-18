@@ -10,6 +10,7 @@
 		AD08109C285CA7D600789B4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08109B285CA7D600789B4A /* User.swift */; };
 		AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E3285CB74000DCE68D /* TabBarController.swift */; };
 		AD39F7E6285CB85200DCE68D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */; };
+		AD8D1B20285E4E4000103894 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D1B1F285E4E4000103894 /* ImageViewController.swift */; };
 		ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82A285A31020058B6A5 /* AppDelegate.swift */; };
 		ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */; };
 		ADA7F82F285A31020058B6A5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7F82E285A31020058B6A5 /* LogInViewController.swift */; };
@@ -23,6 +24,7 @@
 		AD08109B285CA7D600789B4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD39F7E3285CB74000DCE68D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		AD8D1B1F285E4E4000103894 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		ADA7F827285A31020058B6A5 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA7F82A285A31020058B6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA7F82C285A31020058B6A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				AD39F7E3285CB74000DCE68D /* TabBarController.swift */,
 				ADA7F83E285A39300058B6A5 /* WelcomeViewController.swift */,
 				AD39F7E5285CB85200DCE68D /* UserInfoViewController.swift */,
+				AD8D1B1F285E4E4000103894 /* ImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				ADA7F82B285A31020058B6A5 /* AppDelegate.swift in Sources */,
 				AD39F7E4285CB74000DCE68D /* TabBarController.swift in Sources */,
 				AD08109C285CA7D600789B4A /* User.swift in Sources */,
+				AD8D1B20285E4E4000103894 /* ImageViewController.swift in Sources */,
 				ADA7F82D285A31020058B6A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

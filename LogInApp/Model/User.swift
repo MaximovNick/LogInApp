@@ -22,6 +22,9 @@ struct Person {
     
     let name: String
     let surName: String
+    var image: String {
+        "personImage"
+    }
     var fullName: String {
         "\(name) \(surName)"
     }
